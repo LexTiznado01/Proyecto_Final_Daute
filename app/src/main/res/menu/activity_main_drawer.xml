@@ -18,7 +18,7 @@
             android:title="@string/menu_slideshow" />
         <item
             android:id="@+id/creators"
-            android:icon="@drawable/person"
+            android:icon="@drawable/user"
             android:title="@string/creator" />
 
     </group>
