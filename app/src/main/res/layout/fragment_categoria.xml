@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.categorias.categoria"
+    android:layout_marginTop="40dp">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ti_categoria"
+    android:layout_marginTop="40dp"
+    >
+    <EditText
+        android:id="@+id/namecategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="* Nombre de Categoria"
+        android:drawableStart="@drawable/edit"
+        android:inputType="number"
+        android:layout_marginTop="40dp"/>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/idcategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* ID Categoria"
+            android:inputType="number"
+            android:drawableStart="@drawable/card"
+            android:ems="10"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</FrameLayout>
+
+
+
