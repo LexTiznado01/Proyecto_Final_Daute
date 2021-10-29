@@ -38,6 +38,37 @@
             />
 
     </com.google.android.material.textfield.TextInputLayout>
+<Spinner
+    android:id="@+id/estadospinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    android:spinnerMode="dropdown"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUEVA categoria"
+            />
+
+
+    </LinearLayout>
+
 
 </FrameLayout>
 
