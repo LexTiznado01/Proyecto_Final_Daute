@@ -1,72 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#77C3B223"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="#Ff8000"
     tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        />
+
+    <TextView
+        android:id="@+id/titu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text ="LOGIN INVENTARY"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:autofillHints="@string/prompt_email"
-        android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/ic_id"
+        android:drawablePadding="10dp"
+
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Ingrese Usuario"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="0dp"
+        android:hint="Ingrese Clave"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:autofillHints="@string/prompt_password"
-        android:hint="@string/prompt_password"
-        android:imeActionLabel="@string/action_sign_in_short"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
 
-    <Button
+        android:drawableStart="@drawable/ic_id"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:gravity="start|top"
+        android:inputType="textPassword" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESION"
+        android:textSize="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Perdiste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="64dp"
-        android:enabled="false"
-        android:text="@string/action_sign_in"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.2" />
+        android:textColor="@color/black"
+        android:text="¿PERDISTE TU CONTRASEÑA?"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
 
-    <ProgressBar
-        android:id="@+id/loading"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="64dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        android:gravity="center"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta?"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Registrate"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
