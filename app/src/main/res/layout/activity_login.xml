@@ -8,13 +8,14 @@
     android:gravity="center"
     android:orientation="vertical"
     android:layout_margin="15dp"
-    android:background="#Ff8000"
+    android:background="#F5F6F6"
     tools:context=".ui.login.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="250dp"
         android:layout_height="250dp"
+        app:srcCompat="@drawable/itca"
         />
 
     <TextView
