@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.categorias.Categorias">
+    tools:context=".ui.categorias.categoria">
 
     <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.textfield.TextInputLayout
@@ -69,7 +69,7 @@
         android:layout_marginRight="20dp"
         android:textColorHint="@color/blue"
         android:spinnerMode="dropdown"
-        android:background="@drawable/estilospinner"
+       
         style="@style/Widget.AppCompat.DropDownItem.Spinner"
         />
     <!-- android:entries="@array/estadoCategorias"-->
