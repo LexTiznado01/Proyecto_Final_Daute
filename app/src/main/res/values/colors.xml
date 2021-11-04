@@ -1,10 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#A5020F</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#45bc62</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+    <color name="celeste">#DC2222</color>
+    <color name="lightgray">#ededed</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrapeFruit">#ED5565</color>
+    <color name="colorGrapeFruitDark">#DA4453</color>
+    <color name="colorBitterSweet">#FC6E51</color>
+    <color name="colorBitterSweetDark">#E9573F</color>
+    <color name="colorFlower">#FFCE54</color>
+    <color name="colorFlowerDark">#F68B42</color>
+    <color name="colorGrass">#A0D468</color>
+    <color name="colorGrassDark">#8CC152</color>
+    <color name="colorBlueJeans">#509CEC</color>
+    <color name="colorBlueJeansDark">#4A89DC</color>
+    <color name="colorLavander">#AC92EC</color>
+    <color name="colorLavanderDark">#967ADC</color>
+    <color name="colorMint">#48CFAD</color>
+    <color name="colorMintDark">#37BC9B</color>
+    <color name="colorAqua">#4FC1E9</color>
+    <color name="colorAquaDark">#3BAFDA</color>
+    <color name="colorPinkRose">#EC87C0</color>
+    <color name="colorPinkRoseDark">#D770AD</color>
+    <color name="grey">#F3ECEC</color>
+    <color name="grey1">#777070</color>
+    <color name="grey2">#5C5B5B</color>
+    <color name="grey3">#B6B3B3</color>
+
+    <color name="mycolor">#000000</color>
+    <color name="black">#000000</color>
+    <color name="mycolor1">#EC0707</color>
+
+    <color name="yellow">#F3DB04</color>
+    <item name="textGrey0" type="color">#bdbdbd</item>
+    <item name="textGrey1" type="color">#03A9F4</item>
+    <item name="textGrey" type="color">#090909</item>
+
+    <color name="chovi3">#03A9F4</color>
+    <color name="color_toolbar">#FFFEFE</color>
+
+    <color name="colorToolBar">#266496</color>
+
+    <color name="blue">#0119A0</color>
+    <color name="orange">#eaad43</color>
+    <color name="green">#45bc62</color>
+
+    <color name="colorToolBarCardView">#444141</color>
+    <color name="coloriconos">#B60404</color>
+    <color name="mycolor_blanco">#ffffff</color>
+
 </resources>
