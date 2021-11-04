@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1036246338698",
+    "project_id": "proyecto-final-daute-f36dd",
+    "storage_bucket": "proyecto-final-daute-f36dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036246338698:android:15cbf0a3cea19120b97173",
+        "android_client_info": {
+          "package_name": "com.itca.proyecto_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036246338698-2rjcg91d5oupc1fm1o5hshkqn62e09vh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeKVIqKzyWM5aXTo5zmiCH_6-a5-vwMMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036246338698-2rjcg91d5oupc1fm1o5hshkqn62e09vh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
