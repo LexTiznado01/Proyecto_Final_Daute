@@ -8,21 +8,21 @@
     android:gravity="center"
     android:orientation="vertical"
     android:layout_margin="15dp"
-    android:background="#F5F6F6"
+    android:background="@drawable/fondo2"
     tools:context=".ui.login.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        app:srcCompat="@drawable/itca"
+        app:srcCompat="@drawable/usuarios"
         />
 
     <TextView
         android:id="@+id/titu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text ="BIENVENIDOS/AS"
+        android:text="Iniciar de Sesion"
         android:textColor="@color/black"
         android:textAlignment="center"
         android:textStyle="bold"
@@ -31,33 +31,31 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="wrap_content"
+        android:layout_width="285dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:drawableStart="@drawable/ic_id"
+        android:drawableStart="@drawable/ic_email"
         android:drawablePadding="10dp"
-
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Ingrese Usuario"
+        android:hint="Escriba un Correo Electronico"
         android:inputType="textMultiLine"
         android:textColor="@color/black"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/password"
-        android:hint="Ingrese Clave"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
+        android:layout_width="274dp"
         android:layout_height="wrap_content"
-
-        android:drawableStart="@drawable/ic_id"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/ic_key"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:layout_marginTop="30dp"
         android:gravity="start|top"
-        android:inputType="textPassword" />
+        android:hint="Escriba su Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 
 
@@ -65,7 +63,7 @@
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INICIAR SESION"
+        android:text="INICIA SESION"
         android:textSize="20dp"
         android:backgroundTint="@color/purple_200"
         android:layout_marginTop="20dp"
@@ -75,7 +73,7 @@
         android:id="@+id/btn_Perdiste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:text="¿PERDISTE TU CONTRASEÑA?"
         android:textStyle="bold"
         android:background="@android:color/transparent"
@@ -92,7 +90,7 @@
             android:layout_height="wrap_content"
             android:text="¿No tienes cuenta?"
             android:textStyle="bold"
-            android:textColor="#FF0000"
+            android:textColor="#000000"
             />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -100,6 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
             android:text="Registrate"
             android:textStyle="bold"
             android:background="@android:color/transparent"
