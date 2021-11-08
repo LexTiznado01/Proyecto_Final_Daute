@@ -30,6 +30,9 @@ import com.itca.proyecto_final.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
+
+
+
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
 
@@ -134,4 +137,6 @@ public class LoginActivity extends AppCompatActivity {
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
+
+
 }
