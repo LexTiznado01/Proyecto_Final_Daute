@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo2"
     tools:context=".ui.categorias.categoria">
 
     <!-- TODO: Update blank fragment layout -->
@@ -19,7 +18,7 @@
         <EditText
             android:id="@+id/et_idcategoria"
             android:layout_width="match_parent"
-            android:layout_height="74dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:drawableStart="@drawable/ic_id"
             android:drawablePadding="5dp"
@@ -45,8 +44,8 @@
         <EditText
             android:id="@+id/et_namecategoria"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
             android:drawableStart="@drawable/ic_descripcion"
             android:drawablePadding="5dp"
             android:ems="10"
