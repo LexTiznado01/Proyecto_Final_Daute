@@ -14,7 +14,6 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.itca.proyecto_final.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,11 +54,6 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
-    public void signOut() {
-        // [START auth_sign_out]
-        FirebaseAuth.getInstance().signOut();
-        // [END auth_sign_out]
     }
 /*
     @Override
