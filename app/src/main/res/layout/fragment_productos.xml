@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo2"
     tools:context=".ui.Productos.productos">
-    
+
+    <!-- TODO: Update blank fragment layout -->
 
     <ScrollView
         android:layout_width="match_parent"
