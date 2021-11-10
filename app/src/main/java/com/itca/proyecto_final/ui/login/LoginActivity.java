@@ -139,4 +139,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    public void onClick(View view) {
+        Button button = (Button) findViewById(R.id.app_bar_main);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Do something in response to button click
+            }
+        });
+    }
 }
