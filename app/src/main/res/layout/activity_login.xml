@@ -100,6 +100,7 @@
             android:textColor="@color/black"
             android:layout_marginLeft="15dp"
             android:text="Registrate"
+            android:onClick="onClick"
             android:textStyle="bold"
             android:background="@android:color/transparent"
             />
