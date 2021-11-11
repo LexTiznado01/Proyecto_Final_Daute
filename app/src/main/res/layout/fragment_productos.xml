@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo2"
+    android:padding="16dp"
     tools:context=".ui.Productos.productos">
 
     <!-- TODO: Update blank fragment layout -->
@@ -216,9 +217,9 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@color/grey">
+                >
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnSave"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="0dp"
@@ -226,15 +227,14 @@
                     android:layout_weight="1"
                     android:text="Guardar"
                     android:textColor="@color/white"
-                    android:background="@color/chovi3"
-                    />
+                    android:background="@drawable/botton"/>
 
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.1" />
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnNew"
                     style="@style/Widget.AppCompat.Button.Borderless.Colored"
                     android:layout_width="0dp"
@@ -242,7 +242,7 @@
                     android:layout_weight="1"
                     android:text="Nuevo Producto"
                     android:textColor="@color/white"
-                    android:background="@color/chovi3"
+                    android:background="@drawable/botton"
                     />
             </LinearLayout>
 
