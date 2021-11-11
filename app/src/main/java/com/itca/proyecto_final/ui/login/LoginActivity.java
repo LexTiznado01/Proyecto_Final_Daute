@@ -50,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         // ...
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
@@ -182,12 +181,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void onClick(View v) {
-        Intent i = new Intent(this, Registro.class);
-        startActivity(i);
-
-    }
-
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
@@ -199,4 +192,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    public void onClick(View view) {
+    }
 }
