@@ -191,7 +191,4 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
 
-
-    public void onClick(View view) {
-    }
 }
