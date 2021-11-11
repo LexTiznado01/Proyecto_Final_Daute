@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:layout_margin="15dp"
+    android:padding="15dp"
     android:background="@drawable/fondo2"
     tools:context=".ui.login.LoginActivity">
 
@@ -58,16 +58,17 @@
         android:textStyle="bold" />
 
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_grvity="center"
+        android:layout_margin="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
         android:text="INICIA SESION"
         android:textSize="20dp"
-        android:onClick="onClick"
-        android:backgroundTint="@color/purple_200"
-        android:layout_marginTop="20dp"
+        android:background="@drawable/botton"
         />
 
     <androidx.appcompat.widget.AppCompatButton
