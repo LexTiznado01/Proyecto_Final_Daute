@@ -114,7 +114,6 @@
             android:textColor="@color/white"
             android:background="@drawable/botton"
             />
-    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </LinearLayout>
 
