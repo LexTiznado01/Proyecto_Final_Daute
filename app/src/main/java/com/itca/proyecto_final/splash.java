@@ -21,7 +21,7 @@ public class splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        String urlGif = "https://proyectofinaldaute2.000webhostapp.com/img/img.gif";
+        String urlGif = "https://proyectofinaldaute2.000webhostapp.com/img/login.gif";
         ImageView imageView = (ImageView) findViewById(R.id.sphlas);
         Uri uri = Uri.parse(urlGif);
         Glide.with(getApplicationContext()).load(uri).into(imageView);
