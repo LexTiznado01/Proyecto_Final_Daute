@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
     tools:context=".ui.categorias.categoria">
 
     <!-- TODO: Update blank fragment layout -->
@@ -81,17 +82,18 @@
         android:layout_marginTop="300dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@color/grey">
+        >
 
-        <Button
-            android:id="@+id/btnSave"
+        <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btnSave"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Guardar"
             android:textColor="@color/white"
-            android:background="@color/blue"
+            android:background="@drawable/botton"
             />
 
 
@@ -100,7 +102,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.1" />
 
-        <Button
+
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnNew"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="0dp"
@@ -108,8 +112,10 @@
             android:layout_weight="1"
             android:text="Nueva Categoria"
             android:textColor="@color/white"
-            android:background="@color/blue"
+            android:background="@drawable/botton"
             />
-    </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
 
 </FrameLayout>
