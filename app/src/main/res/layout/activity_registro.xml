@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@drawable/fondo2"
     tools:context=".ui.login.Registro">
 
 
@@ -14,23 +15,29 @@
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
         android:hint="Nombre"
         />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:hint="Email"
         />
+
     <EditText
         android:id="@+id/contraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
         android:hint="Contraseña"
         />
+
 <androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -43,8 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="REGISTRAR USUARIO"
-
-
         />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
