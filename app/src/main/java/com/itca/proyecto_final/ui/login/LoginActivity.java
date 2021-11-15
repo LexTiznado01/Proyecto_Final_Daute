@@ -191,4 +191,10 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
 
+    public void onClick(View v) {
+        Intent i = new Intent(this, Registro.class);
+        startActivity(i);
+
+    }
+
 }
