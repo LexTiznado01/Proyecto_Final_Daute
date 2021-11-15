@@ -14,7 +14,8 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:clickable="true"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        android:onClick="regresar"
+        app:srcCompat="@drawable/re" />
 
     <EditText
         android:id="@+id/name"

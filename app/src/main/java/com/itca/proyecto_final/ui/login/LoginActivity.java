@@ -174,8 +174,10 @@ public class LoginActivity extends AppCompatActivity {
 
                     }
                 });
+
         // [END sign_in_custom]
     }
+
 
     private void updateUI(FirebaseUser user) {
 
@@ -190,11 +192,13 @@ public class LoginActivity extends AppCompatActivity {
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
-
     public void onClick(View v) {
         Intent i = new Intent(this, Registro.class);
         startActivity(i);
 
     }
+
+
+
 
 }

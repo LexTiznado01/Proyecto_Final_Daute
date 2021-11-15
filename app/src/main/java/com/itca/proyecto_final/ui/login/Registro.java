@@ -102,6 +102,10 @@ public class Registro extends AppCompatActivity {
             }
         });
     }
+    public void regresar(View v) {
+        Intent i = new Intent(this, LoginActivity.class);
+        startActivity(i);
 
+    }
 }
 
