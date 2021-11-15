@@ -53,12 +53,13 @@ public class Registro extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 name1 = name.getText().toString();
-                email1 = name.getText().toString();
-                contra = name.getText().toString();
+                email1 = email.getText().toString();
+                contra = contraseña.getText().toString();
 
                 if (!name1.isEmpty()&&!email1.isEmpty()&&!contra.isEmpty()){
                     if(contra.length()>=6){
 
+                        registerUser();
                     }else{
                         Toast.makeText(Registro.this, "Minimo 6 caracteres", Toast.LENGTH_SHORT).show();
                     }
@@ -88,8 +89,9 @@ public class Registro extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task2) {
                             if (task2.isSuccessful()){
-                                startActivity(new Intent(Registro.this, HomeFragment.class));
+                                startActivity(new Intent(Registro.this, MainActivity.class));
                                 finish();
+                                Toast.makeText(Registro.this, "Bienvenido!!!", Toast.LENGTH_SHORT).show();
                             }
                             else{
                                 Toast.makeText(Registro.this, "No se crearon los datos", Toast.LENGTH_SHORT).show();
