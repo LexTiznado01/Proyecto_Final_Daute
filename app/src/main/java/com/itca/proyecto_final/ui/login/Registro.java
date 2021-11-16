@@ -58,13 +58,12 @@ public class Registro extends AppCompatActivity {
 
                 if (!name1.isEmpty()&&!email1.isEmpty()&&!contra.isEmpty()){
                     if(contra.length()>=6){
-
                         registerUser();
                     }else{
                         Toast.makeText(Registro.this, "Minimo 6 caracteres", Toast.LENGTH_SHORT).show();
                     }
 
-                    registerUser();
+
                 }else{
                     Toast.makeText(Registro.this, "Se deben completar todos los campos", Toast.LENGTH_SHORT).show();
                 }

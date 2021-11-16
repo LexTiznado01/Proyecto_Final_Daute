@@ -31,6 +31,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.itca.proyecto_final.MainActivity;
 import com.itca.proyecto_final.R;
 import com.itca.proyecto_final.ui.login.LoginViewModel;
 import com.itca.proyecto_final.ui.login.LoginViewModelFactory;
@@ -46,6 +47,13 @@ public class LoginActivity extends AppCompatActivity {
     private String mCustomToken;
     private FirebaseAuth mAuth;
 
+    private EditText usuario;
+    private EditText password;
+    private Button login;
+
+    private String user="";
+    private String contra="";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,11 +68,31 @@ public class LoginActivity extends AppCompatActivity {
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
+        usuario=(EditText) findViewById(R.id.username);
+        password=(EditText) findViewById(R.id.password);
+        login =(Button)findViewById(R.id.login);
 
         final EditText usernameEditText = binding.username;
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
         final AppCompatButton loadingProgressBar = binding.loading;
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                user=usuario.getText().toString();
+                contra= password.getText().toString();
+
+                if (!user.isEmpty() && !contra.isEmpty()){
+                    loginUser();
+                }else{
+                    Toast.makeText(LoginActivity.this, "Complete los campos", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
+
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
@@ -102,47 +130,22 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        TextWatcher afterTextChangedListener = new TextWatcher() {
+    }
+    private void loginUser(){
+        mAuth.signInWithEmailAndPassword(user,contra).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // ignore
-            }
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    finish();
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // ignore
-            }
+                }else{
+                    Toast.makeText(LoginActivity.this, "No se pudo iniciar, comprueve sus datos", Toast.LENGTH_SHORT).show();
 
-            @Override
-            public void afterTextChanged(Editable s) {
-                loginViewModel.loginDataChanged(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
-            }
-        };
-        usernameEditText.addTextChangedListener(afterTextChangedListener);
-        passwordEditText.addTextChangedListener(afterTextChangedListener);
-        passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
-                    loginViewModel.login(usernameEditText.getText().toString(),
-                            passwordEditText.getText().toString());
                 }
-                return false;
-            }
-        });
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
-                loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
             }
         });
     }
-
     // [START on_start_check_user]
     @Override
     public void onStart() {
