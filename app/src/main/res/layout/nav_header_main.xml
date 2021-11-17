@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_bar"
+    android:background="@drawable/fondo2"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -15,16 +15,30 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="82dp"
+        android:layout_height="72dp"
         app:srcCompat="@drawable/itca" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#8F1414"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/nav_header_title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textSize="19dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#0E0E0E" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="SISTEMAS INFORMATICOS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#0E0E0E"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
