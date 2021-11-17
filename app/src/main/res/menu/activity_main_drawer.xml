@@ -17,9 +17,17 @@
             android:icon="@drawable/person"
             android:title="@string/menu_slideshow" />
         <item
+            android:id="@+id/categoria"
+            android:icon="@drawable/ic_category"
+            android:title="@string/categoria" />
+        <item
             android:id="@+id/creators"
             android:icon="@drawable/user"
             android:title="@string/creator" />
+        <item
+            android:id="@+id/salir"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/out" />
 
     </group>
 </menu>

@@ -79,9 +79,9 @@ public class Registro extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                    Map<String, Object> map = new HashMap<>();
-                   map.put("name", name);
-                    map.put("email", email);
-                    map.put("contraseña", contraseña);
+                   map.put("name", name1);
+                    map.put("email", email1);
+                    map.put("contraseña", contra);
 
                     String id = Auth.getCurrentUser().getUid();
                     data.child("Users").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -90,7 +90,7 @@ public class Registro extends AppCompatActivity {
                             if (task2.isSuccessful()){
                                 startActivity(new Intent(Registro.this, MainActivity.class));
                                 finish();
-                                Toast.makeText(Registro.this, "Bienvenido!!!", Toast.LENGTH_SHORT).show();
+
                             }
                             else{
                                 Toast.makeText(Registro.this, "No se crearon los datos", Toast.LENGTH_SHORT).show();

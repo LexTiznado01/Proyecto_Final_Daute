@@ -9,7 +9,10 @@
 
     <string name="menu_home">Productos</string>
     <string name="menu_gallery">Descripcion</string>
+    <string name="categoria">Categorias</string>
     <string name="creator">Creadores</string>
+
+    <string name="out">Salir</string>
     <string name="menu_slideshow">Usuarios</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Correo</string>
