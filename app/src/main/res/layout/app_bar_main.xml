@@ -43,6 +43,7 @@
             android:layout_height="wrap_content"
 
             android:text="Salir"
+            android:onClick="salir"
 
             />
     </androidx.appcompat.widget.LinearLayoutCompat>

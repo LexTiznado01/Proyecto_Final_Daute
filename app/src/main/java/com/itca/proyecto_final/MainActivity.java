@@ -71,6 +71,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public void salir(View view) {
+        finish();
+
+    }
+
 
 /*
     @Override
